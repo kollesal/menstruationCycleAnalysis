@@ -38,15 +38,8 @@
 
 <div class="container text-center">
 	<h1>Are you Ovulating?</h1>
-	<div class="col-md-8" />
-	<h1>
-		Our model predicts that you will be Ovulating on the {ovulation}. Day of
-		your Cycle!
-	</h1>
 
-	<div class="col-md-8" />
 
-	<h3>Mean of Ovulation Day: 12</h3>
 	<div class="col-md-12" />
 
 	<div class="row justify-content-md-center">
@@ -111,7 +104,7 @@
 			/>
 		</div>
 		<div class="col col-lg-2">
-			<label for="mens">Menstruation this Month</label>
+			<label for="mens">Menstruation</label>
 			<input
 				type="number"
 				class="form-control"
@@ -127,6 +120,7 @@
 
 		<div class="col col-lg-2">
 			<button
+			data-bs-toggle="modal" data-bs-target="#exampleModal"
 				type="button"
 				class="my-button"
 				data-toggle="modal"
@@ -143,3 +137,23 @@
 		<img src="pictures/cycle.png" class="rounded mx-auto d-block" alt="..." />
 	</div>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Ovulation Estimation</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			Our model predicts that you will be Ovulating on the {ovulation}. Day of
+			your Cycle!
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
