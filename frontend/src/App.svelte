@@ -24,6 +24,9 @@
 		<li class="nav-item">
 		  <a class="nav-link" href="#/data">Data Collection and preparation</a>
 		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#/training">Model Training</a>
+		  </li>
 	  </ul>
 	</div>
   </nav>
