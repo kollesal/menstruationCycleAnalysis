@@ -34,7 +34,6 @@
 		bmi = ((weight / height / height) * 10000).toFixed(2);
 		return bmi;
 	}
-
 </script>
 
 <div class="container text-center">
@@ -44,7 +43,12 @@
 		Our model predicts that you will be Ovulating on the {ovulation}. Day of
 		your Cycle!
 	</h1>
+
+	<div class="col-md-8" />
+
+	<h3>Mean of Ovulation Day: 12</h3>
 	<div class="col-md-12" />
+
 	<div class="row justify-content-md-center">
 		<div class="col col-lg-3" />
 		<div class="col col-lg-2">
@@ -125,6 +129,8 @@
 			<button
 				type="button"
 				class="my-button"
+				data-toggle="modal"
+				data-target="#ovulationModal"
 				on:click={handleSubmit}
 				on:click={calculateBMI(weight, height)}
 				>Ovulation estimation</button
@@ -134,6 +140,6 @@
 
 	<div class="col-md-8" />
 	<div class="row justify-content-md-center">
-		<img src="cycle.png" class="rounded mx-auto d-block" alt="..." />
+		<img src="pictures/cycle.png" class="rounded mx-auto d-block" alt="..." />
 	</div>
 </div>
