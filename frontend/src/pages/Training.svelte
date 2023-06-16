@@ -42,6 +42,13 @@
     <li><strong>Grid Search</strong>: Done</li>
 </ul>
 
+<img
+    src="pictures/module_final_rmse.jpg"
+    class="rounded mx-auto d-block"
+    style="width: 1000px; height: auto;"
+    alt="..."
+/>
+
 <h1>Error analysis performance</h1>
 
 <h3>RMSE</h3>
@@ -85,6 +92,25 @@ In the Motivation Section, I defined the following hypothesis: Does the predicti
     alt="..."
 />
 
+<h3>Is my model Over- or Underfitting?</h3>
+
+<ul>
+    <li>
+        Da die Testdaten im Vergleich zu den Traingingsdaten ziemlich ähnlich sind, kann davon ausgegangen werden, dass kein Overfitting der Fall ist im Modell.
+    </li>
+    <li>
+        Und da generell der Error sehr tief ist, kann auch davon ausgegangen werden, dass kein Underfitting stattfindet (das Modell passt sehr gut, deswegen gibt es auch tiefe Differenzen/Residuals).
+    </li>
+    <li>
+        So no, my model is fitting optimal! 
+    </li>
+</ul>
+<img
+    src="pictures/model_train_test.jpg"
+    class="rounded mx-auto d-block"
+    style="width: 1000px; height: auto;"
+    alt="..."
+/>
 
 
 
